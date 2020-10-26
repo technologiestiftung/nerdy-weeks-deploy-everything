@@ -1,0 +1,19 @@
+previewsEnabled: true
+previewsExpireAfterDays: 3
+services:
+  - type: web
+    name: Nerdy Weeks - Deploy SSG
+    env: static
+    staticPublishPath: ./_site
+    plan: starter
+    pullRequestPreviewsEnabled: true # optional
+    previewPlan: starter
+    buildCommand: npm run build
+    region: frankfurt # optional (defaults to oregon)
+    envVars:
+      - fromGroup: github
+envVarGroups:
+  - name: github
+    envVars:
+      - key: GITHUB_TOKEN
+        sync: false
