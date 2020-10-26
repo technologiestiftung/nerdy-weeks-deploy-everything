@@ -1,0 +1,18 @@
+previewsEnabled: true
+previewsExpireAfterDays: 3
+services:
+  - type: web
+    name: Nerdy Weeks - Deploy JAMStack
+    env: static
+    staticPublishPath: ./documentRoot
+    plan: starter
+    pullRequestPreviewsEnabled: true # optional
+    previewPlan: starter
+    buildCommand: npm run build
+  - type: web
+    name: nw-jokes
+    env: node
+    buildCommand: npm ci && npm run build
+    startCommand: node build/index.js
+    region: frankfurt # optional (defaults to oregon)
+    repo: https://github.com/fabianmoronzirfas/hello-render-jamstack-api.git

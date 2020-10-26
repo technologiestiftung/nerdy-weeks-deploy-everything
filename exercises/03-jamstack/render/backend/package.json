@@ -1,0 +1,22 @@
+{
+  "name": "nerdy-weeks-deploy-everything-render-jamstack-api",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "dev": "inpyjamas-scripts dev api/index.ts",
+    "build": "tsc -p ."
+  },
+  "keywords": [],
+  "author": "Fabian Morón Zirfas <fabianmoronzirfas@protonmail.ch> (https://fabianmoronzirfas.me)",
+  "license": "MIT",
+  "dependencies": {
+    "@tinyhttp/app": "0.5.3",
+    "@tinyhttp/cors": "0.5.1",
+    "node-fetch": "2.6.1"
+  },
+  "devDependencies": {
+    "@inpyjamas/scripts": "0.1.8-alpha",
+    "@types/node-fetch": "2.5.7",
+    "eslint": "7.11.0"
+  }
+}
