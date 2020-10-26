@@ -1,6 +1,6 @@
  <img src="assets/images/nerdy-weeks-deploy-768.png">
 
-# Nerdy Weeks - Shipping Containers
+# Nerdy Weeks - Deploy Everything!
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ cd nerdy-weeks-deploy-everything
 
 ## What?
 
-We will explore deploying frontends and backends.
+We will explore deploying frontends and backends to clouds
 
 ## How?
 
