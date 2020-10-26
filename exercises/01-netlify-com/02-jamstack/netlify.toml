@@ -1,9 +1,0 @@
-[build]
-
-command = "npm run build"
-functions = "lambda"
-publish = "documentRoot"
-
-[context.production.environment]
-
-AWS_LAMBDA_JS_RUNTIME = "nodejs10.x"

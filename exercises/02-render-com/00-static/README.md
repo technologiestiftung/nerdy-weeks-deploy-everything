@@ -1,1 +1,0 @@
-# Render.com Static Site

@@ -1,4 +1,4 @@
- <img src="assets/images/nerdy-weeks-containers-768.png">
+ <img src="assets/images/nerdy-weeks-deploy-768.png">
 
 # Nerdy Weeks - Shipping Containers
 
@@ -12,7 +12,8 @@
 - Netlify Account + cli (`npm install netlify-cli -g`)
 - Vercel  Account + cli (`npm install  vercel     -g`)
 - Render  Account
-- gh v1 or greater ([official github cli](https://cli.github.com/))
+- `gh` v1 or greater ([official github cli](https://cli.github.com/))
+- [TablePlus](https://www.tableplus.io/) (free alternative would be [Postico](https://eggerapps.at/postico/))
 
 
 Test if they exists - fix it if they don't.
@@ -30,8 +31,18 @@ netlify --version
 ## Setup
 
 ```bash
-npx degit technologiestiftung/nerdy-weeks-deploy-everything#main ./test-test-test-test
+npx degit technologiestiftung/nerdy-weeks-deploy-everything#main ./nerdy-weeks-deploy-everything
 cd nerdy-weeks-deploy-everything
 ```
 
-You will find details in the folders `./exercises/**`
+## What?
+
+We will explore deploying frontends and backends.
+
+## How?
+
+- By comparing 3 applications in Render.com, Netlify.com and Vercel.com
+  - A static site without any build process
+  - A static site generator
+  - A site with an serverless function
+- And by doing the real deal!!1! A Fully fledged API on render.com
