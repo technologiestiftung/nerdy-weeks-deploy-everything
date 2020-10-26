@@ -1,0 +1,20 @@
+{
+  "name": "02-jamstack",
+  "version": "0.0.1",
+  "description": "What is the `[J]`avaScript `[A]`PI `[M]`arkup `[Stack]`?",
+  "scripts": {
+    "build": "tsc -p .",
+    "dev": "vercel dev"
+  },
+  "keywords": [],
+  "author": "Fabian Morón Zirfas <fabianmoronzirfas@protonmail.ch> (https://fabianmoronzirfas.me)",
+  "license": "MIT",
+  "devDependencies": {
+    "@inpyjamas/scripts": "0.1.8-alpha",
+    "@types/node-fetch": "2.5.7"
+  },
+  "dependencies": {
+    "@vercel/node": "1.8.4",
+    "node-fetch": "2.6.1"
+  }
+}

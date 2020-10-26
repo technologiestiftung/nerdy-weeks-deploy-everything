@@ -1,0 +1,36 @@
+{
+  "name": "hello-render-the-real-deal",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prisma:generate": "prisma generate",
+    "predev": "npm run prisma:generate",
+    "dev": "inpyjamas-scripts dev src/index.ts",
+    "prebuild": "npm run prisma:generate",
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabianmoronzirfas/hello-render-the-real-deal.git"
+  },
+  "keywords": [],
+  "author": "Fabian Morón Zirfas <fabianmoronzirfas@protonmail.ch> (https://fabianmoronzirfas.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabianmoronzirfas/hello-render-the-real-deal/issues"
+  },
+  "homepage": "https://github.com/fabianmoronzirfas/hello-render-the-real-deal#readme",
+  "devDependencies": {
+    "@inpyjamas/scripts": "0.1.8-alpha",
+    "@prisma/cli": "2.9.0",
+    "@types/body-parser": "1.19.0",
+    "eslint": "7.12.0"
+  },
+  "dependencies": {
+    "@prisma/client": "2.9.0",
+    "@tinyhttp/app": "0.5.5",
+    "@tinyhttp/cors": "0.5.1",
+    "body-parser": "1.19.0"
+  }
+}

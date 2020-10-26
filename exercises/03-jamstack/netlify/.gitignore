@@ -1,0 +1,5 @@
+# Local Netlify folder
+.netlify
+lambda/jokes.js
+node_modules/
+.vscode/settings.json

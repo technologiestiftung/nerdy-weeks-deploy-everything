@@ -1,0 +1,11 @@
+previewsEnabled: true
+previewsExpireAfterDays: 3
+services:
+  - type: web
+    name: nerdy-weeks-deploy-static
+    env: static
+    staticPublishPath: ./
+    plan: starter
+    pullRequestPreviewsEnabled: true # optional
+    previewPlan: starter
+    region: frankfurt # optional (defaults to oregon)

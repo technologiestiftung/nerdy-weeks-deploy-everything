@@ -1,0 +1,7 @@
+node_modules
+.eslintrc.js
+docker-compose.yml
+render.yaml
+.vscode
+requests
+Dockerfile
