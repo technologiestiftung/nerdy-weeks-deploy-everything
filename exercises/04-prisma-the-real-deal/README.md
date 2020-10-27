@@ -10,19 +10,22 @@ This one is the real deal. You are going from 0 to fully fledged API with Postgr
 ## Setup 
 
 ```bash
+# repo & npm setup
 gh repo create <YOUR USER NAME>/hello-render-prisma-the-real-deal
 cd hello-render-prisma-the-real-deal
 npm init -y
-npm install @prisma/cli @inpyjamas/scripts eslint @types/body-parser --save-dev
 npm install @tinyhttp/app @prisma/client body-parser @tinyhttp/cors
-
+npm install @prisma/cli @inpyjamas/scripts eslint @types/body-parser --save-dev
+# source files
 mkdir src
 touch src/index.ts
+# prisma, render and dev db
 npx prisma init
 touch docker-compose.yml
 touch render.yaml
+# tools
 mkdir requests
-curl xxx > api.http
+open https://git.io/JTiIp # and download the content to requests.api.http
 code --install-extension humao.rest-client prisma.prisma
 ```
 

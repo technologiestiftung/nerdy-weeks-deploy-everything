@@ -4,16 +4,20 @@
 
 ## Prerequisites
 
-- git v2 or greater
-- NodeJS v10 or greater
-- npm v6 or greater
-- VSCode latest
-- docker v19 or greater
-- Netlify Account + cli (`npm install netlify-cli -g`)
-- Vercel  Account + cli (`npm install  vercel     -g`)
-- Render  Account
-- `gh` v1 or greater ([official github cli](https://cli.github.com/))
-- [TablePlus](https://www.tableplus.io/) (free alternative would be [Postico](https://eggerapps.at/postico/))
+- Homebrew [https://brew.sh](https://brew.sh)
+- nvm [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)
+- git v2 or greater (`brew install git`)
+- NodeJS v10 or greater (`nvm install 14 && nvm alias default 14`)
+- npm v6 or greater (comes with Node in `nvm`)
+- VSCode latest (`brew cask install vscode`)
+- docker v19 or greater (`brew cask install docker`)
+- [Netlify Account](https://www.netlify.com) + cli (`npm install netlify-cli -g`)
+- [Vercel  Account](https://www.vercel.com) + cli (`npm install vercel -g`)
+- [Render  Account](https://www.render.com)
+- `gh` v1 or greater ([official github cli](https://cli.github.com/) `brew install gh`) 
+- Postgres DB GUI
+  - [TablePlus](https://www.tableplus.io/) (`brew cask install tableplus`)
+  - [Postico](https://eggerapps.at/postico/)  (free alternative `brew cask install postico`)
 
 
 Test if they exists - fix it if they don't.
@@ -26,6 +30,7 @@ code --version
 docker --version
 vercel --version
 netlify --version
+gh --version
 ```
 
 ## Setup
