@@ -41,7 +41,8 @@ Vercel does not allow to connect with git from the command-line. You need to dep
 gh repo create <USERNAME>/<REPONAME>
 # copy all the source files to the new folder
 cp index.html style.css ./<REPONAME>
-git add . && git ci -m "init" && git push -u origin HEAD
+cd ./<REPONAME>
+git add . && git commit -m "init" && git push -u origin HEAD
 # now go to https://vercel.com/import 
 # and import the new repo
 ```
