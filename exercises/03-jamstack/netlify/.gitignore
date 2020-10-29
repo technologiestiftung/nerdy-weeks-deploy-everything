@@ -3,3 +3,6 @@
 lambda/jokes.js
 node_modules/
 .vscode/settings.json
+documentRoot/*.js
+documentRoot/*.map
+documentRoot/*.d.ts
