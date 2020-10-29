@@ -1,3 +1,5 @@
+<img src="./final/assets/images/nerdy-weeks-deploy-real-deal-768.png" width="100%" alt="image saying 'the real deal - OMG!'">
+
 # Prisma on Render.com 
 
 ## The Real Deal!
@@ -45,42 +47,42 @@ echo '{"compilerOptions": {"sourceMap": true,"outDir": "dist", "rootDir":"src","
 
 ```yml
 version: "3.4"
- services:
-   postgres:
-     image: postgres:11
-     environment:
-       POSTGRES_USER: johndoe
-       POSTGRES_PASSWORD: randompassword
-       POSTGRES_DB: mydb
-     ports:
-       - 5432:5432
-     volumes:
-       - ./pg-data/:/var/lib/postgresql/data
+services:
+  postgres:
+    image: postgres:11
+    environment:
+      POSTGRES_USER: johndoe
+      POSTGRES_PASSWORD: randompassword
+      POSTGRES_DB: mydb
+    ports:
+      - 5432:5432
+    volumes:
+      - ./pg-data/:/var/lib/postgresql/data
 ```
 
 ### Setup Render.com (`render.yaml`)
 
 ```yml
 # https://render.com/docs/yaml-spec
- services:
-   - type: web
-     region: frankfurt
-     name: the-real-deal
-     env: node
-     buildCommand: NODE_ENV=development npm ci && npm run build
-     startCommand: NODE_ENV=production node dist/index.js
-     healthCheckPath: /healthcheck
-     envVars:
-       - key: NODE_ENV
-         value: production
-       - key: DATABASE_URL
-         fromDatabase:
-           name: the-real-deal
-           property: connectionString
- databases:
-  - name: the-real-deal
-    databaseName: mydb
+services:
+  - type: web
     region: frankfurt
+    name: the-real-deal
+    env: node
+    buildCommand: NODE_ENV=development npm ci && npm run build
+    startCommand: NODE_ENV=production node dist/index.js
+    healthCheckPath: /healthcheck
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: the-real-deal
+          property: connectionString
+databases:
+ - name: the-real-deal
+   databaseName: mydb
+   region: frankfurt
 ```
 
 
