@@ -45,12 +45,12 @@ netlify open --site
 gh repo create <USERNAME>/<REPONAME>
 # copy all the source files to the new folder
 cp index.html style.css ./<REPONAME>
+cd ./<REPONAME>
 # initialize the netlify site
 netlify init
 # - Create & configure a new site
 # - Don't enter a build command
 # - Use the current directory for the deploy
-#
 # Now add the files to version control
 git add index.html style.css .gitignore
 # write a nice message
